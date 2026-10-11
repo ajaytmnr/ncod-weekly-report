@@ -111,7 +111,6 @@ function calc(){
   else{ps.textContent='';ps.style.background=''}
   const cap=has('open')&&has('close'),pr=num($('close').value)-num($('open').value);
   $('prof').textContent=cap?f2(pr):'';$('prof').style.color=pr<0?'#9c0006':'#000';
-  $('avgv').textContent=cap?f2(pr/50):'';
   const pct=$('pct');pct.textContent=cap&&num($('open').value)?f2(pr/num($('open').value)*100)+'%':'';
   pct.style.background=pr<0?'#ffc7ce':'';pct.style.color=pr<0?'#9c0006':'#000';
 }
